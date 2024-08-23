@@ -69,7 +69,7 @@ public class Tela extends JFrame {
 		frame.setForeground(new Color(0, 0, 0));
 		frame.setBackground(new Color(0, 0, 0));
 		frame.getContentPane().setBackground(SystemColor.controlHighlight);
-		frame.setBounds(100, 100, 832, 503); // 771
+		frame.setBounds(100, 100, 771, 503); // 771
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 
@@ -151,23 +151,23 @@ public class Tela extends JFrame {
 		labelKeyboard.setBounds(614, 11, 95, 14);
 		frame.getContentPane().add(labelKeyboard);
 
-		JButton btnExpand = new JButton("→");
-		btnExpand.setForeground(Color.WHITE);
-		btnExpand.setBackground(Color.BLACK);
-		btnExpand.setFont(new Font("Arial", Font.BOLD, 13));
-		btnExpand.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				int frameX = frame.getX();
-				int frameY = frame.getY();
-				int frameWidth = frame.getWidth();
+		// JButton btnExpand = new JButton("→");
+		// btnExpand.setForeground(Color.WHITE);
+		// btnExpand.setBackground(Color.BLACK);
+		// btnExpand.setFont(new Font("Arial", Font.BOLD, 13));
+		// btnExpand.addActionListener(new ActionListener() {
+		// 	public void actionPerformed(ActionEvent e) {
+		// 		int frameX = frame.getX();
+		// 		int frameY = frame.getY();
+		// 		int frameWidth = frame.getWidth();
 
-				ExpandWindow expandWindow = new ExpandWindow(frameX + frameWidth, frameY);
-				expandWindow.setVisible(true);
-			}
-		});
+		// 		ExpandWindow expandWindow = new ExpandWindow(frameX + frameWidth, frameY);
+		// 		expandWindow.setVisible(true);
+		// 	}
+		// });
 
-		btnExpand.setBounds(745, 150, 70, 40);
-		frame.getContentPane().add(btnExpand);
+		// btnExpand.setBounds(745, 150, 70, 40);
+		// frame.getContentPane().add(btnExpand);
 
 		JSeparator separator_1 = new JSeparator();
 		separator_1.setForeground(new Color(0, 0, 0));
